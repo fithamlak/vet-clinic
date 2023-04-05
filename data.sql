@@ -17,3 +17,6 @@ VALUES ('Charmander', 'Feb 08, 2020', 0, false, 11 );
 
 INSERT INTO animals (name, date_of_birth, escape_attepts, neutered, weight_kg)
 VALUES ('Plantmon', 'Nov 15, 2021', 2, true, 5.7 );
+
+INSERT INTO animals (name, date_of_birth, escape_attepts, neutered, weight_kg)
+VALUES ('Squirtle', 'Apr 02, 1993', 3, false, 12.13 );
