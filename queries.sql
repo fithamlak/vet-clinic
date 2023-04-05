@@ -90,3 +90,9 @@ SELECT species_id, COUNT(*) AS total_numbers
 FROM animals
 GROUP BY species_id
 ORDER BY total_numbers DESC;   
+
+SELECT animals .*, full_name
+FROM animals
+JOIN owners
+ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Jennifer Orwell' and species_id = 2 ;
