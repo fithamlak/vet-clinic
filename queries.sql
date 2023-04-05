@@ -33,4 +33,5 @@ COMMIT;
 
 BEGIN;
 DELETE FROM animals;
+ROLLBACK;
 
