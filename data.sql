@@ -45,3 +45,9 @@ SET species_id = species.id
 FROM species
 WHERE animals.name LIKE '%mon'
 AND species.name = 'Digimon';
+
+ UPDATE animals
+SET species_id = species.id
+FROM species
+WHERE species_id IS NULL
+AND species.name = 'Pokemon';
