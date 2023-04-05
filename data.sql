@@ -51,3 +51,10 @@ SET species_id = species.id
 FROM species
 WHERE species_id IS NULL
 AND species.name = 'Pokemon';
+
+
+UPDATE animals
+SET owner_id = owners.id
+FROM owners
+WHERE animals.name = 'Agumon'
+AND owners.full_name = 'Sam Smith';
