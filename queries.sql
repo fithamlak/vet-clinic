@@ -16,8 +16,9 @@ BEGIN TRANSACTION;
 
 UPDATE animals
 SET species = 'unspecified';
-
+SELECT * from animals;
 ROLLBACK;
+SELECT * from animals;
 
 BEGIN TRANSACTION;
 
@@ -28,8 +29,9 @@ WHERE name LIKE '%mon';
 UPDATE animals
 SET species = 'pokemon'
 WHERE species IS NULL OR species = '';
-
+SELECT * FROM animals;
 COMMIT;
+SELECT * FROM animals;
 
 BEGIN;
 DELETE FROM animals;
