@@ -55,3 +55,7 @@ SELECT neutered, SUM(escape_attepts) AS total_escapes
 FROM animals
 GROUP BY neutered
 ORDER BY total_escapes DESC;
+
+SELECT neutered, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
+FROM animals
+GROUP BY neutered;
