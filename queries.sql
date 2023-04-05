@@ -59,3 +59,8 @@ ORDER BY total_escapes DESC;
 SELECT neutered, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
 FROM animals
 GROUP BY neutered;
+
+SELECT neutered, AVG(escape_attepts) AS avg_escape_attempts
+FROM animals
+WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
+GROUP BY neutered;
