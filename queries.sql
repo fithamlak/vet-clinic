@@ -18,3 +18,11 @@ UPDATE animals
 SET species = 'unspecified';
 
 ROLLBACK;
+
+BEGIN TRANSACTION;
+
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon';
+
+
