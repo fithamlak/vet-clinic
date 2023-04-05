@@ -47,3 +47,5 @@ SET weight_kg = -1 * weight_kg
 WHERE weight_kg < 0;
 COMMIT;
 
+SELECT COUNT(*) FROM animals;
+
