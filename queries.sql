@@ -68,3 +68,9 @@ SELECT neutered, AVG(escape_attepts) AS avg_escape_attempts
 FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY neutered;
+
+SELECT animals .*, full_name
+FROM animals
+JOIN owners
+ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Melody Pond';
