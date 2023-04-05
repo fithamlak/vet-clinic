@@ -26,3 +26,14 @@ CREATE TABLE species(
 );
 
 ALTER TABLE animals ADD PRIMARY KEY (id);
+
+-- Remove the "species" column from the table
+ALTER TABLE animals DROP COLUMN species;
+
+-- First, add the new column to the animals table
+ALTER TABLE animals ADD COLUMN species_id INTEGER;
+
+-- Next, create the foreign key constraint
+ALTER TABLE animals ADD CONSTRAINT fk_animals_species
+  FOREIGN KEY (species_id)
+  REFERENCES species (id);
