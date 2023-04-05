@@ -24,3 +24,5 @@ CREATE TABLE species(
     name varchar(40),
 	PRIMARY KEY (id)
 );
+
+ALTER TABLE animals ADD PRIMARY KEY (id);
