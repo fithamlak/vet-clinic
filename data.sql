@@ -39,3 +39,9 @@ INSERT INTO owners (full_name, age)
    --insert datas into species table
   INSERT INTO species (name)
   VALUES('Pokemon'), ('Digimon');
+
+  UPDATE animals
+SET species_id = species.id
+FROM species
+WHERE animals.name LIKE '%mon'
+AND species.name = 'Digimon';
