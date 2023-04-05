@@ -75,8 +75,13 @@ JOIN owners
 ON animals.owner_id = owners.id
 WHERE owners.full_name = 'Melody Pond';
 
-SELECT animals .*, species.name
+SELECT , species.name
 FROM animals
 JOIN species
 ON animals.species_id = species.id
 WHERE species.name = 'Pokemon';
+
+SELECT owners.id, full_name, age, name
+FROM owners
+LEFT JOIN animals 
+   ON owners.id = animals.owner_id;
