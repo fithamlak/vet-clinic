@@ -58,3 +58,9 @@ SET owner_id = owners.id
 FROM owners
 WHERE animals.name = 'Agumon'
 AND owners.full_name = 'Sam Smith';
+
+UPDATE animals
+SET owner_id = owners.id
+FROM owners
+WHERE animals.name IN('Gabumon', 'Pikachu')
+AND owners.full_name = 'Jennifer Orwell';
