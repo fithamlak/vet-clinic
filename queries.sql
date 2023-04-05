@@ -85,3 +85,8 @@ SELECT owners.id, full_name, age, name
 FROM owners
 LEFT JOIN animals 
    ON owners.id = animals.owner_id;
+
+SELECT species_id, COUNT(*) AS total_numbers
+FROM animals
+GROUP BY species_id
+ORDER BY total_numbers DESC;   
