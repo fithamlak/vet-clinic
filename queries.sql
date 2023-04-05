@@ -96,3 +96,10 @@ FROM animals
 JOIN owners
 ON animals.owner_id = owners.id
 WHERE owners.full_name = 'Jennifer Orwell' and species_id = 2 ;
+
+
+SELECT animals .*, full_name
+FROM animals
+JOIN owners
+ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Dean Winchester' and escape_attepts = 0;
