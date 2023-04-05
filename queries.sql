@@ -11,3 +11,8 @@ SELECT * from animals WHERE weight_kg BETWEEN 10.4 and 17.3;
 UPDATE animals
 SET name = 'Agumon'
 WHERE name = 'Agumen';
+
+BEGIN TRANSACTION;
+
+UPDATE animals
+SET species = 'unspecified';
