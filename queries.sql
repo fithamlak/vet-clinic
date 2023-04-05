@@ -31,3 +31,6 @@ WHERE species IS NULL OR species = '';
 
 COMMIT;
 
+BEGIN;
+DELETE FROM animals;
+
