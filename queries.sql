@@ -16,3 +16,5 @@ BEGIN TRANSACTION;
 
 UPDATE animals
 SET species = 'unspecified';
+
+ROLLBACK;
