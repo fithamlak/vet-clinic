@@ -11,3 +11,60 @@ SELECT * from animals WHERE weight_kg BETWEEN 10.4 and 17.3;
 UPDATE animals
 SET name = 'Agumon'
 WHERE name = 'Agumen';
+
+BEGIN TRANSACTION;
+
+UPDATE animals
+SET species = 'unspecified';
+SELECT * from animals;
+ROLLBACK;
+SELECT * from animals;
+
+BEGIN TRANSACTION;
+
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon';
+
+UPDATE animals
+SET species = 'pokemon'
+WHERE species IS NULL OR species = '';
+SELECT * FROM animals;
+COMMIT;
+SELECT * FROM animals;
+
+BEGIN;
+DELETE FROM animals;
+SELECT COUNT(*) FROM ANIMALS;
+ROLLBACK;
+SELECT COUNT(*) FROM ANIMALS;
+
+BEGIN;
+DELETE FROM animals
+WHERE date_of_birth > '2022-01-01';
+SAVEPOINT negative_weight;
+UPDATE animals
+SET weight_kg = -1 * weight_kg;
+ROLLBACK TO negative_weight;
+UPDATE animals
+SET weight_kg = -1 * weight_kg
+WHERE weight_kg < 0;
+COMMIT;
+
+SELECT COUNT(*) FROM animals;
+SELECT COUNT(*) FROM animals WHERE escape_attepts = 0;
+SELECT AVG(weight_kg) FROM animals;
+
+SELECT neutered, SUM(escape_attepts) AS total_escapes
+FROM animals
+GROUP BY neutered
+ORDER BY total_escapes DESC;
+
+SELECT neutered, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
+FROM animals
+GROUP BY neutered;
+
+SELECT neutered, AVG(escape_attepts) AS avg_escape_attempts
+FROM animals
+WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
+GROUP BY neutered;
