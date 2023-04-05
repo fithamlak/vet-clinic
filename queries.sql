@@ -103,3 +103,8 @@ FROM animals
 JOIN owners
 ON animals.owner_id = owners.id
 WHERE owners.full_name = 'Dean Winchester' and escape_attepts = 0;
+
+SELECT owner_id, count(*) AS total_numer_of_animals
+FROM animals
+GROUP BY owner_id
+ORDER BY total_numer_of_animals DESC;
