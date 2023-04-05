@@ -35,3 +35,7 @@ VALUES ('Ditto', 'May 14, 2022', 4, true, 22 );
 
 INSERT INTO owners (full_name, age)
   VALUES ('Sam Smith', 34 ), ('Jennifer Orwell', 19), ('Bob', 45), ('Meldoy Pond', 77), ('Dean Winchester', 14), ('Jodie Whittaker', 38);
+
+   --insert datas into species table
+  INSERT INTO species (name)
+  VALUES('Pokemon'), ('Digimon');
