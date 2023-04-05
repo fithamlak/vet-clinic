@@ -45,3 +45,6 @@ ALTER TABLE animals ADD COLUMN owners_id INTEGER;
 ALTER TABLE animals ADD CONSTRAINT fk_animals_owners
   FOREIGN KEY (owners_id)
   REFERENCES owners (id);
+
+--change owners_id column name into owner_id whichis the given name
+  ALTER TABLE animals RENAME COLUMN owners_id TO owner_id;
