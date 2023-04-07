@@ -76,3 +76,24 @@ SET owner_id = owners.id
 FROM owners
 WHERE animals.name IN('Angemon', 'Boarmon')
 AND owners.full_name = 'Dean Winchester';
+
+
+-- insert four vets into vets table 
+INSERT INTO vets (name, age, date_of_graduation)
+  VALUES ('Vet William Tatcher', 45, 'Apr 23 2000' ), ('Vet Maisy Smith', 26, 'Jan 17 2019'), ('Vet Stephanie Mendez', 64, 'May 04 1981'), ('Vet Jack Harkness', 38, 'Jun 08 2008');
+
+
+-- insert the given data into specializations table
+
+INSERT INTO specializations (vet_id, species_id)
+ VALUES (1, 1), (3, 2), (3, 1), (4, 2);
+ 
+
+ INSERT INTO visits (animal_id, vet_id, visit_date)
+  VALUES (1, 1, 'May 24 2020'), (1, 3, 'Jul 22 2020'), (2, 4, 'Feb 02 2021'),
+         (3, 2, 'Jan 05 2020'), (3, 2, 'Mar 08 2020'), (3, 2, 'May 14 2021'),
+         (4, 3, 'May 04 2021'), (5, 4, 'Feb 24 2021'), (6, 2, 'Dec 21 2019'),
+         (6, 1, 'Aug 10 2020'), (6, 2, 'Apr 07 2021'), (7, 3, 'Sep 29 2019'),
+         (1, 4, 'Oct 03 2020'), (1, 4, 'Nov 04 2020'), (9, 2, 'Jan 24 2019'),
+         (9, 2, 'May 15 2019'), (9, 2, 'Feb 27 2020'), (9, 2, 'Aug 03 2019'),
+         (10, 3, 'May 24 2020'), (10, 1, 'Jan 11 2021');
