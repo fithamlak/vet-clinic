@@ -48,3 +48,12 @@ ALTER TABLE animals ADD CONSTRAINT fk_animals_owners
 
 --change owners_id column name into owner_id whichis the given name
   ALTER TABLE animals RENAME COLUMN owners_id TO owner_id;
+
+-- create vets table based on the given columns
+  CREATE TABLE vets(
+	  id INT GENERATED ALWAYS AS IDENTITY,
+    name varchar(40),
+    age int,
+	  date_of_graduation date,
+	  PRIMARY KEY (id)
+);
