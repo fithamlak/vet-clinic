@@ -81,3 +81,9 @@ AND owners.full_name = 'Dean Winchester';
 -- insert four vets into vets table 
 INSERT INTO vets (name, age, date_of_graduation)
   VALUES ('Vet William Tatcher', 45, 'Apr 23 2000' ), ('Vet Maisy Smith', 26, 'Jan 17 2019'), ('Vet Stephanie Mendez', 64, 'May 04 1981'), ('Vet Jack Harkness', 38, 'Jun 08 2008');
+
+
+-- insert the given data into specializations table
+
+INSERT INTO specializations (vet_id, species_id)
+ VALUES (1, 1), (3, 2), (3, 1), (4, 2);
