@@ -87,3 +87,4 @@ INSERT INTO vets (name, age, date_of_graduation)
 
 INSERT INTO specializations (vet_id, species_id)
  VALUES (1, 1), (3, 2), (3, 1), (4, 2);
+ 
