@@ -41,7 +41,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 [Vet-clinic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[Vet-clinic]** is a a database for clinic to store and access animals information efficiently
 
@@ -76,11 +75,11 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **[create animals table]**
 - **[query and update animals table]**
 - [ ] **[query and update animals table]**
+- [ ] **[add "join table" for visits]**
 
 
 
@@ -108,7 +107,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[add "join table" for visits]**
 - [ ] **[database performance audit]**
 - [ ] **[add database schema diagram.]**
 
