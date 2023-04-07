@@ -57,3 +57,10 @@ ALTER TABLE animals ADD CONSTRAINT fk_animals_owners
 	  date_of_graduation date,
 	  PRIMARY KEY (id)
 );
+
+-- Create a "join table" called specializations to handle many-to-many relationship bitween species and vets tables.
+CREATE TABLE specializations (
+  vet_id INTEGER REFERENCES vets(id),
+  species_id INTEGER REFERENCES species(id),
+  PRIMARY KEY (vet_id, species_id)
+);
