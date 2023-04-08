@@ -40,37 +40,51 @@ INSERT INTO owners (full_name, age)
   INSERT INTO species (name)
   VALUES('Pokemon'), ('Digimon');
 
-  UPDATE animals
+-- Modify your inserted animals so it includes the species_id value:
+  -- If the name ends in "mon" it will be Digimon  
+UPDATE animals
 SET species_id = species.id
 FROM species
 WHERE animals.name LIKE '%mon'
 AND species.name = 'Digimon';
 
- UPDATE animals
+-- All other animals are Pokemon
+UPDATE animals
 SET species_id = species.id
 FROM species
 WHERE species_id IS NULL
 AND species.name = 'Pokemon';
 
-
+-- Modify your inserted animals to include owner information (owner_id
+-- Sam Smith owns Agumon.
 UPDATE animals
 SET owner_id = owners.id
 FROM owners
 WHERE animals.name = 'Agumon'
 AND owners.full_name = 'Sam Smith';
 
+-- Jennifer Orwell owns Gabumon and Pikachu.
 UPDATE animals
 SET owner_id = owners.id
 FROM owners
 WHERE animals.name IN('Gabumon', 'Pikachu')
 AND owners.full_name = 'Jennifer Orwell';
 
+-- Bob owns Devimon and Plantmon.
+UPDATE animals
+SET owner_id = owners.id
+FROM owners
+WHERE animals.name IN('Devimon', 'Plantmon')
+AND owners.full_name = 'Bob';
+
+--Melody Pond owns Charmander, Squirtle, and Blossom
 UPDATE animals
 SET owner_id = owners.id
 FROM owners
 WHERE animals.name IN('Charmander', 'Squirtle', 'Blossom')
 AND owners.full_name = 'Melody Pond';
 
+-- Dean Winchester owns Angemon and Boarmon.
 UPDATE animals
 SET owner_id = owners.id
 FROM owners
@@ -84,11 +98,15 @@ INSERT INTO vets (name, age, date_of_graduation)
 
 
 -- insert the given data into specializations table
-
 INSERT INTO specializations (vet_id, species_id)
  VALUES (1, 1), (3, 2), (3, 1), (4, 2);
  
-
+-- Insert the following data for visits:
+  -- Agumon visited William Tatcher on May 24th, 2020.
+  -- Agumon visited Stephanie Mendez on Jul 22th, 2020.
+  -- ....
+  -- ...
+  -- ... etc
  INSERT INTO visits (animal_id, vet_id, visit_date)
   VALUES (1, 1, 'May 24 2020'), (1, 3, 'Jul 22 2020'), (2, 4, 'Feb 02 2021'),
          (3, 2, 'Jan 05 2020'), (3, 2, 'Mar 08 2020'), (3, 2, 'May 14 2021'),
