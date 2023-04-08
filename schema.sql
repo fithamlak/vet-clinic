@@ -1,5 +1,5 @@
 /* Database schema to keep the structure of entire database. */
-
+-- create animals database
 CREATE TABLE animals(
 	id INT GENERATED ALWAYS AS IDENTITY,
     name varchar(40),
@@ -9,22 +9,33 @@ CREATE TABLE animals(
 	weight_kg decimal
 );
 
+-- add column "species" into animals table
 ALTER TABLE animals 
 ADD COLUMN species varchar(50);
 
+-- Create a table named owners with the following columns
 CREATE TABLE owners(
 	id INT GENERATED ALWAYS AS IDENTITY,
-    full_name varchar(40),
-    age int,
+  full_name varchar(40),
+  age int,
 	PRIMARY KEY (id)
 );
 
+-- Create a table named species with the following columns:
 CREATE TABLE species(
 	id INT GENERATED ALWAYS AS IDENTITY,
-    name varchar(40),
+  name varchar(40),
 	PRIMARY KEY (id)
 );
 
+
+--Modify animals table:
+  --Make sure that id is set as autoincremented PRIMARY KEY
+  --Remove column species
+  --Add column species_id which is a foreign key referencing species table
+  --Add column owner_id which is a foreign key referencing the owners table
+
+-- make id as primary key of animals
 ALTER TABLE animals ADD PRIMARY KEY (id);
 
 -- Remove the "species" column from the table
@@ -73,6 +84,7 @@ CREATE TABLE visits (
     PRIMARY KEY (vet_id, animal_id)
 );
 
+-- add visit_date column from primary key
 ALTER TABLE visits
 DROP CONSTRAINT visits_pkey,
 ADD PRIMARY KEY (vet_id, animal_id, visit_date );
