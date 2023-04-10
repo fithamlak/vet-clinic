@@ -28,7 +28,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -95,10 +94,17 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Fithamlak**
 
 - GitHub: [@fithamlak](https://github.com/fithamlak)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/fithamlak-fikrie)
+
+👤 **Mirna Ampuero**
+
+- GitHub: [@M1rn4](https://github.com/M1rn4)
+- Twitter: [Mirna_Ampuero](https://twitter.com/_AmpueroMirna)
+- LinkedIn: [Mirna](https://www.linkedin.com/in/mirna-ampuero-caro/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- FUTURE FEATURES -->
@@ -107,7 +113,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[database performance audit]**
 - [ ] **[add database schema diagram.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
