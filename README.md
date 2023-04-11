@@ -109,9 +109,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 -- not b=pland now
 
-- [ ] **[database performance audit]**
-- [ ] **[add database schema diagram.]**
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
