@@ -88,3 +88,12 @@ CREATE TABLE visits (
 ALTER TABLE visits
 DROP CONSTRAINT visits_pkey,
 ADD PRIMARY KEY (vet_id, animal_id, visit_date );
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
+ALTER TABLE visits ADD COLUMN id INT GENERATED ALWAYS AS IDENTITY;
+ALTER TABLE visits
+DROP CONSTRAINT visits_pkey,
+ADD PRIMARY KEY (id);
