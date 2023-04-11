@@ -80,6 +80,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - **[query and update animals table]**
 - [ ] **[query and update animals table]**
 - [ ] **[add "join table" for visits]**
+- [ ] **[database performance audit]**
+- [ ] **[add database schema diagram.]**
 
 
 
@@ -105,7 +107,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+-- not b=pland now
 
 - [ ] **[database performance audit]**
 - [ ] **[add database schema diagram.]**
