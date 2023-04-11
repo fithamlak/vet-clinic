@@ -3,15 +3,13 @@
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+From a database diagram, interpret it, and implement the SQL needed to build that database using pair progrmming:
 
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 <a name="readme-top"></a>
-
-
 
 <!-- TABLE OF CONTENTS -->
 
@@ -74,15 +72,10 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-
-- **[create animals table]**
-- **[query and update animals table]**
-- [ ] **[query and update animals table]**
-- [ ] **[add "join table" for visits]**
-- [ ] **[database performance audit]**
-- [ ] **[add database schema diagram.]**
-
-
+- **[Create a file named schema_based_on_diagram.sql]**
+- **[Join tables from many-to-many relationships]**
+- **[Add the FK indexes]**
+- **[Implement sql from the given diagram]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,7 +87,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Fithamlak**
 
